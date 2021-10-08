@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Warning":6,"Bitnob\\Client\\Tests\\BinobSdkTest::testCanHandle404s":4},"times":{"Warning":0,"Bitnob\\Client\\Tests\\BinobSdkTest::testCanHandle404s":0.001,"Bitnob\\Client\\Tests\\BinobSdkTest::testCanRequest200Response":0.011,"Bitnob\\Client\\Tests\\BinobSdkTest::testCanRequest201Response":0}}
