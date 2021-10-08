@@ -33,7 +33,7 @@ $page = 1;
 // $response = $bitnobSdk->addresses()->validateAddress('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
 
 // $response = $bitnobSdk->wallets()->getAll();
-$response = $bitnobSdk->wallets()->sendBitcoin(50000, 'bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g', 'gidkom@yahoo.co.uk');
+$response = $bitnobSdk->wallets()->sendBitcoin(50000, 'bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g', 'test@gmail.com');
 
 
 var_dump($response);

@@ -30,7 +30,6 @@
         "php-http/discovery": "^1.12",
         "php-http/guzzle6-adapter": "2.x-dev",
         "psr/http-client": "^1.0",
-        "psr/http-client-implementation": "^1.0",
         "psr/http-factory": "^1.0",
         "symfony/options-resolver": "^5.2"
     },
