@@ -40,6 +40,8 @@ $page = 1;
 // $response = $bitnobSdk->checkout()->getStatus('339e17ba-695d-467b-9162-db9c6e4401cdb');
 // $response = $bitnobSdk->checkout()->create(10000);
 // $response = $bitnobSdk->checkout()->create('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d', 'gidkom@gmail.com');
+// $response = $bitnobSdk->swap()->swapBtcToUsd(5.0);
+$response = $bitnobSdk->swap()->swapUsdToBtc(5.0);
  
  
 var_dump($response);
