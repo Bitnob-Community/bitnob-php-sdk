@@ -37,4 +37,15 @@ final class Addresses
     {
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/validate", [], json_encode(compact('address'))));
     }
+
+    public function generateUsdcAddress(string $chain, string $customerEmail, string $label = ''): array
+    {
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/generate/usdc", [], json_encode(compact('chain', 'customerEmail', 'label'))));
+    }
+
+    public function generateUsdtAddress(string $chain, string $customerEmail, string $label = ''): array
+    {
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/generate/usdc", [], json_encode(compact('chain', 'customerEmail', 'label'))));
+    }
+    
 }
