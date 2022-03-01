@@ -6,7 +6,7 @@ use Bitnob\Client\BitnobSdk;
 
 
 $env = 'dev';
-$apikey = 'sk.8fcdc.a23474b7d4612534df';
+$apikey = 'sk.6eebc.a8d71e128db960023ca1262d9e';
 
 $options = new Options($env);
 $bitnobSdk = new BitnobSdk($apikey, $options);
@@ -20,20 +20,26 @@ $page = 1;
 // $response = $bitnobSdk->customers()->getById('a8120a9b-50c6-4ebf-a66e-c58c67e6a3ae');
 // $response = $bitnobSdk->customers()->getByEmail('goat@bitnob.com');
 // $response = $bitnobSdk->customers()->createCustomer([
-//     "email" => "goat@bitnob.com",
+//     "email" => "berlin@bitnob.com",
 //     "firstName" => "Bernard",
-//     "lastName" => "Mandingo",
+//     "lastName" => "Berlin",
 //     "phone" => "8048029480",
 //     "countryCode" => "+234"
 // ]);
 
 // $response = $bitnobSdk->addresses()->getAll(2);
-// $response = $bitnobSdk->addresses()->generate('gidkom@gmail.com');
+// $response = $bitnobSdk->addresses()->generate('berlin@gmail.com');
 // $response = $bitnobSdk->addresses()->getAddressDetails('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
 // $response = $bitnobSdk->addresses()->validateAddress('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
 
 // $response = $bitnobSdk->wallets()->getAll();
 // $response = $bitnobSdk->wallets()->sendBitcoin(50000, 'bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g', 'test@gmail.com');
 
-
+// $response = $bitnobSdk->checkout()->getAll($page);
+// $response = $bitnobSdk->checkout()->getCheckout('339e17ba-695d-467b-9162-db9c6e4401cb');
+// $response = $bitnobSdk->checkout()->getStatus('339e17ba-695d-467b-9162-db9c6e4401cdb');
+// $response = $bitnobSdk->checkout()->create(10000);
+// $response = $bitnobSdk->checkout()->create('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d', 'gidkom@gmail.com');
+ 
+ 
 var_dump($response);
