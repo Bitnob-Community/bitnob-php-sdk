@@ -8,6 +8,7 @@ use Bitnob\Client\Endpoint\Customers;
 use Bitnob\Client\Endpoint\Transactions;
 use Bitnob\Client\Endpoint\Addresses;
 use Bitnob\Client\Endpoint\Wallets;
+use Bitnob\Client\Endpoint\Checkout;
 use Http\Client\Common\HttpMethodsClientInterface;
 use Http\Client\Common\Plugin\BaseUriPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
@@ -61,5 +62,11 @@ final class BitnobSdk
     public function addresses(): Addresses
     {
         return new Endpoint\Addresses($this);
+    }
+
+    // Register Addresses API
+    public function checkout(): Checkout
+    {
+        return new Endpoint\Checkout($this);
     }
 }

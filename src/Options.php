@@ -26,7 +26,7 @@ final class Options
     private function configureOptions(OptionsResolver $resolver): void
     {
         $uris = [
-            'dev' => 'http://localhost:7000/api/v1',
+            'dev' => 'http://localhost:7001/api/v1',
             'sandbox' => 'https://sandboxapi.bitnob.co/api/v1',
             'production' => 'https://api.bitnob.co/api/v1',
         ];
