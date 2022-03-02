@@ -70,4 +70,11 @@ $page = 1;
 // $response = $bitnobSdk->virtualCards()->freezeCard('03b3d845-79e8-4339-8981-42730e9eb924');
 // $response = $bitnobSdk->virtualCards()->unFreezeCard('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d');
  
+
+// $response = $bitnobSdk->exchangeRates()->allRates();
+// $response = $bitnobSdk->exchangeRates()->allP2PRates();
+// $response = $bitnobSdk->exchangeRates()->p2PRatesByCurrency('ngn');
+// $response = $bitnobSdk->exchangeRates()->rateByCurrency('ghs');
+// $response = $bitnobSdk->exchangeRates()->convertCurrency(24, 'USD_BTC');
+
 var_dump($response);

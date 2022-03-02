@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bitnob\Client;
 
 use Bitnob\Client\Endpoint\Customers;
+use Bitnob\Client\Endpoint\ExchangeRates;
 use Bitnob\Client\Endpoint\Transactions;
 use Bitnob\Client\Endpoint\Addresses;
 use Bitnob\Client\Endpoint\Wallets;
@@ -78,9 +79,15 @@ final class BitnobSdk
         return new Endpoint\Swap($this);
     }
 
-    // Register Swap API
+    // Register Virtual Cards API
     public function virtualCards(): VirtualCards
     {
         return new Endpoint\VirtualCards($this);
+    }
+
+    // Register Exchange Rates API
+    public function exchangeRates(): ExchangeRates
+    {
+        return new Endpoint\ExchangeRates($this);
     }
 }
