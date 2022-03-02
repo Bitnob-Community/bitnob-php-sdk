@@ -12,6 +12,9 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
         "psr-4": {
             "Bitnob\\Client\\": "src"
         }

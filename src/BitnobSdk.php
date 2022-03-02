@@ -10,6 +10,7 @@ use Bitnob\Client\Endpoint\Addresses;
 use Bitnob\Client\Endpoint\Wallets;
 use Bitnob\Client\Endpoint\Checkout;
 use Bitnob\Client\Endpoint\Swap;
+use Bitnob\Client\Endpoint\VirtualCards;
 use Http\Client\Common\HttpMethodsClientInterface;
 use Http\Client\Common\Plugin\BaseUriPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
@@ -71,9 +72,15 @@ final class BitnobSdk
         return new Endpoint\Checkout($this);
     }
 
-    // Register Addresses API
+    // Register Swap API
     public function swap(): Swap
     {
         return new Endpoint\Swap($this);
+    }
+
+    // Register Swap API
+    public function virtualCards(): VirtualCards
+    {
+        return new Endpoint\VirtualCards($this);
     }
 }

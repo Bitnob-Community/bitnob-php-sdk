@@ -41,7 +41,33 @@ $page = 1;
 // $response = $bitnobSdk->checkout()->create(10000);
 // $response = $bitnobSdk->checkout()->create('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d', 'gidkom@gmail.com');
 // $response = $bitnobSdk->swap()->swapBtcToUsd(5.0);
-$response = $bitnobSdk->swap()->swapUsdToBtc(5.0);
+// $response = $bitnobSdk->swap()->swapUsdToBtc(5.0);
+
+// $response = $bitnobSdk->virtualCards()->list($page);
+// $response = $bitnobSdk->virtualCards()->getCard('03b3d845-79e8-4339-8981-42730e9eb924');
+// $response = $bitnobSdk->virtualCards()->listCardUsers();
+// $response = $bitnobSdk->virtualCards()->getCardUser('d736f2e1-07e7-4fa8-83f5-8747bad66a1d');
+// $response = $bitnobSdk->virtualCards()->listTransactions();
+// $response = $bitnobSdk->virtualCards()->listCardTransactions('03b3d845-79e8-4339-8981-42730e9eb924', 1);
  
+// $response = $bitnobSdk->virtualCards()->registerUser([
+//     'firstName' => 'Miles',
+//     'customerEmail' => 'miles@gmail.com',
+//     "idNumber" => "00000000000",
+//     "idType" => "BVN",
+//     "lastName" => "Ayorinde",
+//     "phoneNumber" => "+234xxxxxxxxxx",
+//     "city" => "Ikeja",
+//     "state" => "Lagos",
+//     "country" => "Nigeria",
+//     "zipCode" => "00234",
+//     "line1" => "No Street Name"
+// ]);
+
+// $response = $bitnobSdk->virtualCards()->createCard('miles@gmail.com');
+// $response = $bitnobSdk->virtualCards()->topUpCard(1000, '03b3d845-79e8-4339-8981-42730e9eb924');
+// $response = $bitnobSdk->virtualCards()->withdraw(500, '82f0ea8a-448a-44d3-893a-fc9ac9b19c3d');
+// $response = $bitnobSdk->virtualCards()->freezeCard('03b3d845-79e8-4339-8981-42730e9eb924');
+// $response = $bitnobSdk->virtualCards()->unFreezeCard('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d');
  
 var_dump($response);
