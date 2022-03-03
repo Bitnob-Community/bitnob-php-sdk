@@ -77,4 +77,7 @@ $page = 1;
 // $response = $bitnobSdk->exchangeRates()->rateByCurrency('ghs');
 // $response = $bitnobSdk->exchangeRates()->convertCurrency(24, 'USD_BTC');
 
+// $response = $bitnobSdk->checkoutTemplates()->list();
+// $response = $bitnobSdk->checkoutTemplates()->getTemplate('462c52e7-03e3-4161-8df6-fb93c92ac683');
+
 var_dump($response);

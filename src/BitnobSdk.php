@@ -12,6 +12,7 @@ use Bitnob\Client\Endpoint\Wallets;
 use Bitnob\Client\Endpoint\Checkout;
 use Bitnob\Client\Endpoint\Swap;
 use Bitnob\Client\Endpoint\VirtualCards;
+use Bitnob\Client\Endpoint\CheckoutTemplates;
 use Http\Client\Common\HttpMethodsClientInterface;
 use Http\Client\Common\Plugin\BaseUriPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
@@ -89,5 +90,11 @@ final class BitnobSdk
     public function exchangeRates(): ExchangeRates
     {
         return new Endpoint\ExchangeRates($this);
+    }
+
+    // Register Checkout Templates API
+    public function checkoutTemplates(): CheckoutTemplates
+    {
+        return new Endpoint\CheckoutTemplates($this);
     }
 }
