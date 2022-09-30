@@ -62,14 +62,14 @@ final class Wallets
                 json_encode(compact('request'))));
     }
 
-    public function sendUsdc(double $amount, string $address, string $description, string $chain): array {
+    public function sendUsdc(float $amount, string $address, string $chain, string $customerEmail, string $description): array {
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/send-usdc", [],
-                json_encode(compact('amount', 'address', 'description', 'chain'))));
+                json_encode(compact('amount', 'address', 'description', 'chain', 'customerEmail'))));
     }
 
-    public function sendUsdt(double $amount, string $address, string $description, string $chain): array {
+    public function sendUsdt(float $amount, string $address, string $chain, string $customerEmail, string $description): array {
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/send-usdt", [],
-                json_encode(compact('amount', 'address', 'description', 'chain'))));
+                json_encode(compact('amount', 'address', 'description', 'chain', 'customerEmail'))));
     }
 
 }
