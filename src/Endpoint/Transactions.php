@@ -9,7 +9,7 @@ use Bitnob\Client\BitnobSdk;
 
 final class Transactions
 {
-    private Sdk $sdk;
+    private BitnobSdk $sdk;
     private string $baseUri;
 
     public function __construct(BitnobSdk $sdk)
