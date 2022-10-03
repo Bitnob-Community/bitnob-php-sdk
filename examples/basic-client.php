@@ -79,7 +79,7 @@ $page = 1;
 // $response = $bitnobSdk->exchangeRates()->rateByCurrency('ghs');
 // $response = $bitnobSdk->exchangeRates()->convertCurrency(24, 'USD_BTC');
 
-// $response = $bitnobSdk->checkoutTemplates()->list();
+$response = $bitnobSdk->checkoutTemplates()->list();
 // $response = $bitnobSdk->checkoutTemplates()->getTemplate('462c52e7-03e3-4161-8df6-fb93c92ac683');
 
 // $response = $bitnobSdk->wallets()->sendUsdc(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money');

@@ -5,10 +5,10 @@ A PHP sdk to interact with bitnob's API
 
 ### With Composer
 
-`composer require bitnob/bitnob-php-sdk:2.0.0`
+`composer require bitnob/bitnob-php-sdk:2.0.1`
 
 ## REQUIREMENTS
-- PHP 7.4+
+- PHP 8.0+
 
 ## Usage
 ### Authentication
@@ -28,4 +28,9 @@ $apikey = 'sk.8fcdc.a23474b7d2612534df';
 
 $options = new Options($env);
 $bitnobSdk = new BitnobSdk($apikey, $options);
+```
+
+### Example
+```
+$response = $bitnobSdk->addresses()->generateUsdtAddress('TRX', 'hello@gmail.com');
 ```
