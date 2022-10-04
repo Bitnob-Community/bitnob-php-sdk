@@ -1,7 +1,7 @@
 {
     "name": "bitnob/bitnob-php-sdk",
     "description": "Official PHP SDK to interact with Bitnob's API",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "type": "library",
     "license": "MIT",
     "authors": [
