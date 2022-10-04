@@ -1,7 +1,7 @@
 {
     "name": "bitnob/bitnob-php-sdk",
     "description": "Official PHP SDK to interact with Bitnob's API",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -31,7 +31,7 @@
         "php": "^7. || ^8.0",
         "php-http/client-common": "^2.3",
         "php-http/discovery": "^1.12",
-        "php-http/guzzle6-adapter": "2.x-dev",
+        "php-http/guzzle6-adapter": "v2.0.2",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
         "symfony/options-resolver": "^5.2"
