@@ -5,7 +5,7 @@ A PHP sdk to interact with bitnob's API
 
 ### With Composer
 
-`composer require bitnob/bitnob-php-sdk:2.0.1`
+`composer require bitnob/bitnob-php-sdk`
 
 ## REQUIREMENTS
 - PHP 8.0+
