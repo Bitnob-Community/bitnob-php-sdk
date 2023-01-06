@@ -31,7 +31,7 @@
         "php": "^7. || ^8.0",
         "php-http/client-common": "^2.3",
         "php-http/discovery": "^1.12",
-        "php-http/guzzle6-adapter": "v2.0.2",
+        "php-http/guzzle7-adapter": "v1.0.0",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
         "symfony/options-resolver": "^5.2"
