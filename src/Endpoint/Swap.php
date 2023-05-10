@@ -17,14 +17,25 @@ final class Swap
         $this->sdk = $sdk;
         $this->baseUri = '/wallets';
     }
+    
+    public function getSellBtcSwapQuote($amount): array
+    {
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/initialize-swap-for-usd", [], json_encode(compact('amount'))));
+    }
 
     public function swapBtcToUsd($amount): array
     {
-        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/swap-bitcoin-usd", [], json_encode(compact('amount'))));
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/finalize-swap-for-usd", [], json_encode(compact('quoteId'))));
+    }
+
+
+    public function getBuyBtcSwapQuote($amount): array
+    {
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/initialize-swap-for-bitcoin", [], json_encode(compact('amount'))));
     }
 
     public function swapUsdToBtc($amount): array
     {
-        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/swap-usd-bitcoin", [], json_encode(compact('amount'))));
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/finalize-swap-for-bitcoin", [], json_encode(compact('quoteId'))));
     }
 }

@@ -6,7 +6,7 @@ use Bitnob\Client\BitnobSdk;
 
 
 $env = 'dev';
-$apikey = 'sk.6eebc.a8d71e128db960023ca1262d9e';
+$apikey = 'sk.ab334fe.0d5647d682f29469426b7f4315a1';
 
 $options = new Options($env);
 $bitnobSdk = new BitnobSdk($apikey, $options);
@@ -42,8 +42,12 @@ $page = 1;
 // $response = $bitnobSdk->checkout()->getStatus('339e17ba-695d-467b-9162-db9c6e4401cdb');
 // $response = $bitnobSdk->checkout()->create(10000);
 // $response = $bitnobSdk->checkout()->create('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d', 'gidkom@gmail.com');
-// $response = $bitnobSdk->swap()->swapBtcToUsd(5.0);
-// $response = $bitnobSdk->swap()->swapUsdToBtc(5.0);
+
+// $response = $bitnobSdk->swap()->getSellBtcSwapQuote(5.0);
+// $response = $bitnobSdk->swap()->swapBtcToUsd($quoteId);
+
+// $response = $bitnobSdk->swap()->getBuyBtcSwapQuote(5.0);
+// $response = $bitnobSdk->swap()->swapUsdToBtc($quoteId);
 
 // $response = $bitnobSdk->virtualCards()->list($page);
 // $response = $bitnobSdk->virtualCards()->getCard('03b3d845-79e8-4339-8981-42730e9eb924');
@@ -79,7 +83,7 @@ $page = 1;
 // $response = $bitnobSdk->exchangeRates()->rateByCurrency('ghs');
 // $response = $bitnobSdk->exchangeRates()->convertCurrency(24, 'USD_BTC');
 
-$response = $bitnobSdk->checkoutTemplates()->list();
+// $response = $bitnobSdk->checkoutTemplates()->list();
 // $response = $bitnobSdk->checkoutTemplates()->getTemplate('462c52e7-03e3-4161-8df6-fb93c92ac683');
 
 // $response = $bitnobSdk->wallets()->sendUsdc(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money');
