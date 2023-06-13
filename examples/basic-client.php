@@ -29,9 +29,9 @@ $page = 1;
 
 // $response = $bitnobSdk->addresses()->getAll(2);
 // $response = $bitnobSdk->addresses()->generate('berlin@gmail.com');
-// $response = $bitnobSdk->addresses()->getAddressDetails('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
+// $response = $bitnobSdk->addresses()->getAddressDetails('0xb596d3a35eff75f0be8aa9622cdcf92f5b62b05c');
 // $response = $bitnobSdk->addresses()->validateAddress('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
-// $response = $bitnobSdk->addresses()->generateUsdcAddress('TRX', 'berlin@gmail.com');
+$response = $bitnobSdk->addresses()->generateUsdcAddress('TRX', 'berlin@gmail.com');
 // $response = $bitnobSdk->addresses()->generateUsdtAddress('TRX', 'berlin@gmail.com');
 
 // $response = $bitnobSdk->wallets()->getAll();
@@ -44,9 +44,11 @@ $page = 1;
 // $response = $bitnobSdk->checkout()->create('82f0ea8a-448a-44d3-893a-fc9ac9b19c3d', 'gidkom@gmail.com');
 
 // $response = $bitnobSdk->swap()->getSellBtcSwapQuote(5.0);
+// $quoteId = $response['data']['quoteId'];
 // $response = $bitnobSdk->swap()->swapBtcToUsd($quoteId);
 
 // $response = $bitnobSdk->swap()->getBuyBtcSwapQuote(5.0);
+// $quoteId = $response['data']['quoteId'];
 // $response = $bitnobSdk->swap()->swapUsdToBtc($quoteId);
 
 // $response = $bitnobSdk->virtualCards()->list($page);

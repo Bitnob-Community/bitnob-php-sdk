@@ -23,8 +23,9 @@ final class Swap
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/initialize-swap-for-usd", [], json_encode(compact('amount'))));
     }
 
-    public function swapBtcToUsd($amount): array
+    public function swapBtcToUsd($quoteId): array
     {
+        error_log($quoteId);
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/finalize-swap-for-usd", [], json_encode(compact('quoteId'))));
     }
 
@@ -34,7 +35,7 @@ final class Swap
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/initialize-swap-for-bitcoin", [], json_encode(compact('amount'))));
     }
 
-    public function swapUsdToBtc($amount): array
+    public function swapUsdToBtc($quoteId): array
     {
         return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/finalize-swap-for-bitcoin", [], json_encode(compact('quoteId'))));
     }
