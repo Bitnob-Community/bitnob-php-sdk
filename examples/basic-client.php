@@ -31,7 +31,7 @@ $page = 1;
 // $response = $bitnobSdk->addresses()->generate('berlin@gmail.com');
 // $response = $bitnobSdk->addresses()->getAddressDetails('0xb596d3a35eff75f0be8aa9622cdcf92f5b62b05c');
 // $response = $bitnobSdk->addresses()->validateAddress('bcrt1q7ux9zcfumtrvtt6wa9xqnfauxe4n86dj274c7g');
-$response = $bitnobSdk->addresses()->generateUsdcAddress('TRX', 'berlin@gmail.com');
+// $response = $bitnobSdk->addresses()->generateUsdcAddress('TRX', 'berlin@gmail.com');
 // $response = $bitnobSdk->addresses()->generateUsdtAddress('TRX', 'berlin@gmail.com');
 
 // $response = $bitnobSdk->wallets()->getAll();
@@ -88,7 +88,7 @@ $response = $bitnobSdk->addresses()->generateUsdcAddress('TRX', 'berlin@gmail.co
 // $response = $bitnobSdk->checkoutTemplates()->list();
 // $response = $bitnobSdk->checkoutTemplates()->getTemplate('462c52e7-03e3-4161-8df6-fb93c92ac683');
 
-// $response = $bitnobSdk->wallets()->sendUsdc(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money');
-// $response = $bitnobSdk->wallets()->sendUsdt(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money');
+// $response = $bitnobSdk->wallets()->sendUsdc(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money', 'abc12355');
+// $response = $bitnobSdk->wallets()->sendUsdt(100, '0x40bd5ed61da592e1ecb67ad4288e632bb757e52f', 'TRX', 'berlin@gmail.com', 'send money', 'xyz9876t');
 
 var_dump($response);
